@@ -13,7 +13,16 @@
 # FizzBuzz, 16, 17, Fizz, 19, Buzz
 
 def fizzbuzz(n):
-    return
+    nums = range(1, n+1)
+    for num in nums:
+        if num % 15 == 0:
+            print('FizzBuzz')
+        elif num % 3 == 0:
+            print('Fizz')
+        elif num % 5 == 0:
+            print('Buzz')
+        else:
+            print(num)
 
 if __name__ == "__main__":
     fizzbuzz(100)
